@@ -7,6 +7,8 @@ Popular Movies
 3. Getting the Skeleton of the Project Done(bundle gem popular_movies)
 4. Plan the interface
 5. "Start with the entry point - file run" -- Avi
+6. Cloned the repository. Experimented with git from the command line and pushing the files upstream. Ended up cloning the repository. Setting up the commit - a, git status, git push etc.. setup
+7. Changed the permissions on the executable file by using chmod +x . Added the #!/usr/bin/env ruby line to the executable file so that it knows to run Ruby when called.
 
 
 

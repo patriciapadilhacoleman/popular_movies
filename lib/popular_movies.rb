@@ -1,5 +1,2 @@
-require "popular_movies/version"
-
-module PopularMovies
-  # Your code goes here...
-end
+require_relative "./popular_movies/version"
+require_relative "./popular_movies/cli"
