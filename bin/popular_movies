@@ -1,5 +1,22 @@
 #!/usr/bin/env ruby
 
 #!/usr/bin/env ruby
-require "./lib/popular_movies"
+#require "./lib/popular_movies"
+require "bundler/setup"
+
+Bundler.require
+
+require 'pry'
+require_relative "../lib/popular_movies"
+require_relative "../lib/popular_movies/cli"
+require_relative "../lib/popular_movies/movie"
+require_relative "../lib/popular_movies/scraper"
+require_relative "sql_runner"
+
+
+@db = SQLite3::Database.new('../popularmovies.db')
+@db.execute("DROP TABLE IF EXISTS popular_movies;")
+@sql_runner = SQLRunner.new(@db)
+@sql_runner.execute_schema_migration_sql
+
 PopularMovies::CLI.new.call

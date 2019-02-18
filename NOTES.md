@@ -1,5 +1,7 @@
 Popular Movies
 
+Also Available on YouTube at: https://youtu.be/6L2RCQ-gnf4
+
 1. Come up with a plan - Popular Free Streaming Movies (tubitv.com)
 2. Setup a development environment:
   Due to my Mac being broken, it entailed after several frustrating hours trying to install a Unix box, it required creating a dual boot setup with Ubuntu
@@ -9,13 +11,7 @@ Popular Movies
 5. "Start with the entry point - file run" -- Avi
 6. Cloned the repository. Experimented with git from the command line and pushing the files upstream. Ended up cloning the repository. Setting up the commit - a, git status, git push etc.. setup
 7. Changed the permissions on the executable file by using chmod +x . Added the #!/usr/bin/env ruby line to the executable file so that it knows to run Ruby when called.
-
-
-
-
-
-
-
+8. Worked on the CLI class "controller", added stub methods for the initialization, prompt and loop. Tested
 
 Plan the interface:
 User starts the program - popular_movies
@@ -32,8 +28,15 @@ List of Free Popular Movies:
 3. Annabelle - Horror
 
 Which one would you like to know more about?(Type the number and press <Enter>)
-
-
-Will list the movies and display the genre
+SOME SPECS:
+Will list the movies and display the genre, runtime and ratings
 User selects which ones to learn more about
+The dynamic movie url is found
 A description of the movie will be displayed and a link to playing the movie.
+
+What is a Popular Movie?
+
+It has a title
+It has a genre
+It has a rating
+It has a runtime
